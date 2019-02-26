@@ -1,0 +1,425 @@
+.toolbar {
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.no-logo-margin {
+  margin-left: 20px
+}
+
+.move-top {
+  margin-top: -8px
+}
+
+.card-image {
+  background-size: cover;
+  background-position: left center
+}
+
+.chart {
+  height: 82%
+}
+
+.card {
+  z-index: 2;
+  overflow: hidden
+}
+
+.chart-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+
+.piechart-card {
+  min-height: 350px;
+}
+
+.barchart-card {
+  width: 100%;
+  min-height: 180px !important;
+}
+
+.sunburst-card {
+  min-height: 420px !important;
+  width: 100%;
+}
+
+.barchart-card, .sunburst-card {
+  box-shadow: none;
+  background-color: #fafafa !important;
+}
+
+.piechart-card .chart-background {
+  opacity: 1;
+  z-index: 1;
+}
+
+.piechart-card #chartdiv {
+  width: 100%;
+  height: 100%;
+}
+
+.piechart-card .widget-content {
+  z-index: 0;
+}
+
+.widget-content {
+  min-height: 280px;
+  position: relative;
+  z-index: 2;
+}
+
+.widget-content-new {
+  min-height: 255px;
+  position: relative;
+  z-index: 2;
+}
+
+.widget-content-map {
+  min-height: 260px;
+}
+
+.widget-actions {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  padding-bottom: 3px;
+}
+
+.no-shadow {
+  box-shadow: none
+}
+
+table.table tbody td, table.table tbody th {
+  height: 25px !important
+}
+
+.flex-full-height {
+  padding: 0 !important
+}
+
+.text-center {
+  text-align: center
+}
+
+.pagination-block {
+  display: flex;
+  justify-content: center;
+}
+
+.row-selected {
+  background-color: #9bccff
+}
+
+table.table thead tr {
+  height: 30px
+}
+
+.small_title {
+  height: 30px
+}
+
+.button-sm {
+  margin: -11px -11px !important
+}
+
+.button-sm button {
+  height: 16px;
+  width: 16px;
+  margin: 0 0 !important
+}
+
+.table-block {
+  height: 100%;
+  margin: 0 4px;
+  border-radius: 2px;
+}
+
+.table-block-vm {
+  margin: 4px 4px;
+}
+
+.table-column {
+  height: 100% !important;
+  background-color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+  0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-center {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.fill-height {
+  height: 100%;
+  max-height: 100%;
+  padding: 8px;
+}
+
+.iframe-size {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: none
+}
+
+.cam-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left center
+}
+
+.progress {
+  margin-left: 16px
+}
+
+.progress-button {
+  transition: all 0.3s ease;
+  color: rgba(0, 0, 0, .3) !important
+}
+
+.elevation-1 tbody td, .elevation-1 tbody th {
+  height: 25px !important
+}
+
+.elevation-1 table {
+  table-layout: fixed
+}
+
+.elevation-1 {
+  max-height: 100%;
+  overflow: hidden
+}
+
+.elevation-1 tr {
+  height: 30px
+}
+
+.elevation-1 tr td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.bar-chart {
+  align-self: flex-end
+}
+
+.deviant {
+  color: red
+}
+
+.singlestat {
+  color: #52545c;
+  font-weight: 500;
+  height: 70px;
+  text-align: center
+}
+
+.singlestat .value {
+  font-size: 30px
+}
+
+.gauge {
+  color: #52545c;
+  font-weight: 500;
+  text-align: center
+}
+
+.norm {
+  background-color: #299c46
+}
+
+.warn {
+  background-color: #ED8128
+}
+
+.crit {
+  background-color: #d44a3a
+}
+
+.clickable_row {
+  cursor: pointer
+}
+
+.no-padding {
+  padding: 0
+}
+
+.map {
+  min-height: 300px
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: center;
+}
+
+.axis-hidden .domain {
+  stroke: transparent;
+}
+
+.donut-outer {
+  display: flex;
+  justify-content: center;
+}
+
+.donut-chart-basic, .donut-chart-extended {
+  max-width: 100%;
+}
+
+.donut-chart-basic text {
+  font-size: 13px !important;
+}
+
+.donut-chart-extended text {
+  font-size: 11px !important;
+}
+
+.containerLevelGlyph span {
+  font-size: 10px !important;
+}
+
+.brightness-slider label {
+  color: #000 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.amChart {
+  min-height: 450px;
+}
+
+
+.amChart_container {
+  max-height: 12.7vh;
+  overflow: hidden;
+}
+
+.small_amChart {
+  height: 130px;
+}
+
+.restaurant-card {
+  min-height: 335px;
+}
+
+.restaurant-card-new {
+  min-height: 150px;
+}
+
+.restaurant-manager-card-new .restaurant-card {
+  min-height: 0;
+}
+
+.logo_bk {
+  height: 86%;
+  padding: 1%;
+}
+
+.main-title {
+  white-space: nowrap
+}
+
+.data-is-loading {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner .v-icon {
+  color: darkgrey;
+  opacity: 0.5;
+  font-size: 3em !important;
+  transition: opacity 0.3s;
+}
+
+.logo_main {
+  display: block;
+  flex-grow: 0 !important;
+  margin: 50px;
+}
+
+.main-page-button {
+  display: block;
+  flex-grow: 0 !important;
+  margin: 50px;
+}
+
+.logo_nokia_main {
+  height: 40px;
+}
+
+.logo_bk_main {
+  height: 100px;
+}
+
+.relative_block {
+  position:relative;
+}
+
+.absolute_heading {
+  position: absolute;
+  top:3%;
+  left:1.2%;
+  z-index: 10;
+}
+
+.block_content_row {
+  max-height: 200px;
+}
+
+.data_meta_info {
+  font-size: 22px;
+  text-align:center;
+}
+
+.data_value {
+  font-size: 24px;
+  text-align:center;
+}
+
+.data_meta_info p {
+  margin-top: 5%
+}
+
+.data_value p {
+  margin-top: 12%
+}
+
+.table_container {
+
+}
+
+.economy_heading, .economy_value {
+  text-align:center;
+}
+
+.economy_value {
+  font-size: 20px;
+}
+
+.economy_digit {
+  font-size: 32px;
+}
+
