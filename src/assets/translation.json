@@ -209,10 +209,6 @@
       "for_last_month": " Last month",
       "per_square_meter": "Per square meter",
       "clients_per_meter_short": "cl/m²",
-      "dummy_1": "December 21 , 21:40     -   Lights stayed on overnight",
-      "dummy_2": "December 25, 2:40     -   Oven wasn't shut down",
-      "dummy_3": "December 28, 4:43     -   Freezer power supply went down",
-      "dummy_4": "December 30, 2:15     -   Air overheat. Temperature in hall reached +28",
       "clients": "clients",
       "alarms_and_events": "Alarms and events",
       "energy": "Energy",
@@ -226,7 +222,14 @@
       "current_power_not_working_hrs_avg_30d": "Curent power in non-working hours, 30 days average",
       "switchable_power_non_working_hrs": "Switchable power in non-working hours, 30 days average",
       "non-switchable_power_non_working_hrs": "Non-switchable power in non-working hours, 30 days average",
-      "switchable_power_non_working_hrs_avg_30d": "Possible switchable power in non-working hours, 30 days average"
+      "switchable_power_non_working_hrs_avg_30d": "Possible switchable power in non-working hours, 30 days average",
+      "current_fps": "Current fps",
+      "heatmap": "Heatmap",
+      "areas": "Areas",
+      "alarms": "Alarms",
+      "alarm_time": "Alarm time",
+      "alarm_zone": "Alarm zone",
+      "alarm_type": "Alarm type"
     }
   },
   "ru": {
@@ -439,10 +442,6 @@
       "for_last_month": "За последний месяц",
       "per_square_meter": "На квадратный метр",
       "clients_per_meter_short": "кл/м²",
-      "dummy_1": "21 декабря, 17:40     -   Освещение не выключено ночью",
-      "dummy_2": "25 декабря, 2:40     -   Не выключена плита",
-      "dummy_3": "28 декабря, 4:43     -   Отключение питания холодильника",
-      "dummy_4": "30 декабря, 2:15     -   Перетоп. Температура в зале +28",
       "clients": "клиентов",
       "alarms_and_events": "Тревоги и уведомления",
       "energy": "Энергия",
@@ -456,7 +455,14 @@
       "current_power_not_working_hrs_avg_30d": "Текущая мощность в нерабочие часы, среднее за 30 дней",
       "non-switchable_power_non_working_hrs": "Неотключаемая мощность в нерабочие часы, среднее за 30 дней",
       "switchable_power_non_working_hrs": "Отключаемая мощность в нерабочие часы, среднее за 30 дней",
-      "switchable_power_non_working_hrs_avg_30d": "Возможная отключаемая мощность в нерабочие часы, среднее за 30 дней"
+      "switchable_power_non_working_hrs_avg_30d": "Возможная отключаемая мощность в нерабочие часы, среднее за 30 дней",
+      "current_fps": "Текущее кадров/сек",
+      "heatmap": "Тепловая карта",
+      "areas": "Зоны",
+      "alarms": "Оповещения",
+      "alarm_time": "Время оповещения",
+      "alarm_zone": "Зона",
+      "alarm_type": "Тип оповещения"
     }
   }
 }

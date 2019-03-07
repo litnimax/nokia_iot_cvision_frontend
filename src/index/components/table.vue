@@ -14,19 +14,9 @@
             </template>
             <template slot="items" slot-scope="props">
               <tr :class="props.item.selected ? 'row-selected text-center' : 'text-center'">
-                <td @click="center_map(props.item)">{{ props.item.address}}</td>
-                <td @click="center_map(props.item)">{{ props.item.energy_daily}}
-                  {{$t("message.energy_consumption_daily_short")}}
-                </td>
-                <td @click="center_map(props.item)">{{ props.item.energy_per_client}}
-                  {{$t("message.energy_consumption_per_client_short")}}
-                </td>
-                <td @click="center_map(props.item)">{{ props.item.rating}}</td>
-                <td class="button-sm">
-                  <v-btn icon class="ml-0 mr-2" @click="show_restaurant_page(props.item.restaurant_page)">
-                    <v-icon color="grey" small>fa-eye</v-icon>
-                  </v-btn>
-                </td>
+                <td>{{ props.item.alarm_time}}</td>
+                <td>{{ props.item.alarm_zone}}</td>
+                <td>{{ props.item.alarm_type}}</td>
               </tr>
             </template>
           </v-data-table>
@@ -51,7 +41,7 @@
     components: {
     },
     data: () => ({
-      pagination: {rowsPerPage: 4}
+      pagination: {rowsPerPage: 3}
     }),
     props: ["data"],
     computed: {
@@ -63,31 +53,18 @@
       },
       table_headers() {
         return [
-          {text: this.$i18n.t("message.restaurant_address"), value: "address", width: "15%", align: "center"},
+          {text: this.$i18n.t("message.alarm_time"), value: "alarm_time", width: "10%", align: "center"},
           {
-            text: this.$i18n.t("message.energy_consumption_daily"),
-            value: "energy_daily",
-            width: "11%",
+            text: this.$i18n.t("message.alarm_zone"),
+            value: "alarm_zone",
+            width: "10%",
             align: "center"
           },
-          {
-            text: this.$i18n.t("message.energy_consumption_per_client"),
-            value: "energy_per_client",
-            width: "11%",
-            align: "center"
-          },
-          {text: this.$i18n.t("message.rating"), value: "rating", width: "6%", align: "center"},
-          {text: this.$i18n.t("message.restaurant_page"), value: "restaurant_page", width: "10%", align: "center"},
+          {text: this.$i18n.t("message.alarm_type"), value: "alarm_type", width: "10%", align: "center"},
         ]
       }
     },
     methods: {
-      show_restaurant_page(page) {
-        this.$router.push("/restaurant-management/" + page);
-      },
-      center_map(item) {
-        this.$emit("restaurant_row_clicked", item);
-      }
     }
   };
 </script>

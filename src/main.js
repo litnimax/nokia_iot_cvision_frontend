@@ -43,7 +43,7 @@ Vue.use(Vuex, VueAxios, Axios, Vue_i18n);
 const store = new Vuex.Store({
   state: {
     locale: localStorage.getItem('locale') ? localStorage.getItem('locale') : 'ru',
-    influxdb_server: "http://192.168.1.45:8086",
+    openCV_url: "http://0.0.0.0:9001",
   },
   mutations: {
     updateLocale(state, locale) {
@@ -55,8 +55,8 @@ const store = new Vuex.Store({
     getLocale: state => {
       return state.locale;
     },
-    getInfluxServerAddress: state => {
-      return state.influxdb_server;
+    getOpenCVURL: state => {
+      return state.openCV_url;
     }
   },
   actions: {
@@ -65,16 +65,6 @@ const store = new Vuex.Store({
     }
   }
 });
-
-import L from 'leaflet'
-import "../node_modules/leaflet/dist/leaflet.css";
-
-delete L.Icon.Default.prototype._getIconUrl
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('../node_modules/leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('../node_modules/leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('../node_modules/leaflet/dist/images/marker-shadow.png')
-})
 
 const messages = require('./assets/translation.json');
 const i18n = new Vue_i18n({

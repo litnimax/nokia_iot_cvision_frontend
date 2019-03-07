@@ -389,6 +389,10 @@ table.table thead tr {
   max-height: 200px;
 }
 
+.block_content {
+  overflow:hidden;
+}
+
 .data_meta_info {
   font-size: 22px;
   text-align:center;
@@ -421,5 +425,14 @@ table.table thead tr {
 
 .economy_digit {
   font-size: 32px;
+}
+
+.detector_image {
+  object-fit: contain;
+  object-position: center;
+}
+
+.detector_image {
+  max-height: 270px;
 }
 
