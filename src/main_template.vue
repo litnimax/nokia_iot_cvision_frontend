@@ -1,34 +1,25 @@
 <template lang=html>
   <v-app id="inspire">
-    <v-navigation-drawer
-      :clipped="true" disable-route-watcher
-      mini-variant
-      fixed app disable-resize-watcher
-    >
-      <v-list dense>
-        <template v-for="item in items">
-          <v-list-tile :key="item.text" :to="{path: item.path}">
-            <v-list-tile-action>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-tile-action>
-          </v-list-tile>
-        </template>
-      </v-list>
-      <language-select class="language-select"></language-select>
-    </v-navigation-drawer>
     <v-toolbar color="primary" dark app fixed clipped-left class="toolbar">
-      <v-toolbar-items class="cursor-pointer" @click="$router.push('/main')">
-        <img class="align-self-center logo_bk mr-3" src="./assets/nokia_blue.svg" alt="BK Logo">
-        <div class="d-inline align-self-center title main-title">{{$t("message.video_analytics")}}</div>
-      </v-toolbar-items>
+      <v-menu>
+        <v-toolbar-title class="no-logo-margin"  slot="activator" @click="$router.push('/main')">
+          <img class="mr-3 mt-2" src="./assets/logo_nokia.svg" height="25px" alt="Nokia Logo">
+          {{$t("message.video_analytics")}}
+        </v-toolbar-title>
+      </v-menu>
       <language-select class="language-select"></language-select>
       <v-toolbar-items class="hidden-sm-and-down">
         <div class="title mt-4 main-title">{{$t("message.working_on_glial_impact")}}</div>
       </v-toolbar-items>
     </v-toolbar>
-    <v-content>
+    <v-content style="padding-bottom:20px;">
       <router-view></router-view>
     </v-content>
+    <div>
+      <div class="caption text-center align-self-center relative_block" style="position:fixed; height: 20px;">
+        2018-2019 © Nokia IoT Laboratory, Moscow.   Powered by Nokia Glial™ and IMPACT™.   Version: {{frontend_version}}
+      </div>
+    </div>
   </v-app>
 </template>
 

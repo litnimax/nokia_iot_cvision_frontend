@@ -2,17 +2,17 @@
   <div>
     <v-dialog v-on:keydown.esc="hide()" v-on:keydown.enter="update_areas()" :value="visible" persistent min-height="500">
       <v-card>
-        <v-card-title class="headline">Добавить зону</v-card-title>
+        <v-card-title class="headline">{{$t("message.edit_zones")}}</v-card-title>
         <v-card-text id="canvas_container" class="text-xs-center">
           <canvas style="position: absolute; z-index:200" id="points_canvas" class="canvas1"></canvas>
           <canvas style="position: relative; z-index:100" id="current_user_image_canvas" class="canvas2"></canvas>
         </v-card-text>
         <v-card-actions>
-          <v-btn color="error" flat @click="$parent.delete_areas()">Удалить все зоны</v-btn>
+          <v-btn color="error" @click="$parent.delete_areas()">{{$t("message.delete_all_zones")}}</v-btn>
           <v-spacer></v-spacer>
-          <v-btn color="warning darken-1" flat @click="clear_canvas_points">Сбросить текущую область</v-btn>
+          <v-btn color="warning" @click="clear_canvas_points">{{$t("message.erase_current_zone")}}</v-btn>
           <v-spacer></v-spacer>
-          <v-btn color="green darken-1" flat @click="update_areas()">Создать зону</v-btn>
+          <v-btn color="success" @click="update_areas()">{{$t("message.create_zone")}}</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

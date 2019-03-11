@@ -6,9 +6,17 @@ import main_page from './index/main_page.vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
-let theme_nokia = require('./assets/nokia_colors');
 Vue.use(Vuetify, {
-  theme: theme_nokia
+  theme: {
+    primary: "#124191",
+    secondary: "#1976D2",
+    accent: "#80D8FF",
+    error: "#B71C1C",
+    warning: "#FBC02D",
+    info: "#2196f3",
+    success: "#4caf50",
+    lightblue: "#E6F0FF"
+  }
 });
 
 import fontawesome from '@fortawesome/fontawesome'

@@ -223,13 +223,22 @@
       "switchable_power_non_working_hrs": "Switchable power in non-working hours, 30 days average",
       "non-switchable_power_non_working_hrs": "Non-switchable power in non-working hours, 30 days average",
       "switchable_power_non_working_hrs_avg_30d": "Possible switchable power in non-working hours, 30 days average",
-      "current_fps": "Current fps",
+      "current_fps": "Online, current FPS",
       "heatmap": "Heatmap",
       "areas": "Areas",
       "alarms": "Alarms",
       "alarm_time": "Alarm time",
       "alarm_zone": "Alarm zone",
-      "alarm_type": "Alarm type"
+      "alarm_type": "Alarm type",
+      "edit_zones": "Edit zones",
+      "camera_control": "Camera control",
+      "delete_all_zones": "Delete all zones",
+      "erase_current_zone": "Erase current zone",
+      "create_zone": "Create zone",
+      "default_resolution": "Set default",
+      "set_resolution": "Set resolution",
+      "height": "height",
+      "width": "width"
     }
   },
   "ru": {
@@ -456,13 +465,23 @@
       "non-switchable_power_non_working_hrs": "Неотключаемая мощность в нерабочие часы, среднее за 30 дней",
       "switchable_power_non_working_hrs": "Отключаемая мощность в нерабочие часы, среднее за 30 дней",
       "switchable_power_non_working_hrs_avg_30d": "Возможная отключаемая мощность в нерабочие часы, среднее за 30 дней",
-      "current_fps": "Текущее кадров/сек",
+      "current_fps": "Онлайн, кадров/сек",
       "heatmap": "Тепловая карта",
       "areas": "Зоны",
       "alarms": "Оповещения",
       "alarm_time": "Время оповещения",
       "alarm_zone": "Зона",
-      "alarm_type": "Тип оповещения"
+      "alarm_type": "Тип оповещения",
+      "edit_zones": "Управление зонами",
+      "camera_control": "Управление камерой",
+      "delete_all_zones": "Удалить все зоны",
+      "erase_current_zone": "Сбросить текущую зону",
+      "create_zone": "Создать зону",
+      "default_resolution": "По умолчанию",
+      "set_resolution": "Установить разрешение",
+      "height": "высота",
+      "width": "ширина"
+
     }
   }
 }

@@ -29,15 +29,12 @@
                 <h3 class="text-xs-center">{{$t('message.current_fps')}}: {{current_fps}}</h3>
               </v-flex>
               <v-flex d-flex md11 class="block_content">
-                <v-layout column wrap justify-center fill-height>
-                  <v-flex d-flex md-3>
-                    <v-btn color="error" @click="delete_areas">Удалить все зоны</v-btn>
+                <v-layout d-flex column wrap fill-height justify-center>
+                  <v-flex d-flex md4 align-center>
+                    <v-btn color="primary" @click="set_areas">{{$t('message.edit_zones')}}</v-btn>
                   </v-flex>
-                  <v-flex d-flex md-3>
-                    <v-btn color="warning" @click="set_areas">Добавить зону</v-btn>
-                  </v-flex>
-                  <v-flex d-flex md-3>
-                    <v-btn color="warning" @click="set_resolution">Изменить разрешение</v-btn>
+                  <v-flex d-flex md4 align-center>
+                    <v-btn color="primary" @click="set_resolution">{{$t('message.camera_control')}}</v-btn>
                   </v-flex>
                 </v-layout>
               </v-flex>
@@ -45,7 +42,7 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex d-flex md5>
+      <v-flex d-flex md6>
         <v-layout row wrap>
           <v-flex d-flex md12>
             <v-layout column wrap>
@@ -59,11 +56,6 @@
             </v-layout>
           </v-flex>
         </v-layout>
-      </v-flex>
-      <v-flex d-flex md1 class="footer-internal">
-        <div class="caption text-center align-self-center relative_block">
-          2018-2019 © Nokia IoT Laboratory, Moscow.   Powered by Nokia Glial™ and IMPACT™.   Version: {{frontend_version}}
-        </div>
       </v-flex>
     </v-layout>
     <canvas-dialog ref="canvas_dialog"></canvas-dialog>
