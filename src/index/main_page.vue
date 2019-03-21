@@ -4,7 +4,7 @@
       <v-flex d-flex md6>
         <v-layout row wrap>
           <v-flex d-flex md4>
-            <v-layout column wrap>
+            <v-layout column>
               <v-flex d-flex md1 class="block_title">
                 <h3 class="text-xs-center">{{$t('message.heatmap')}}</h3>
               </v-flex>
@@ -14,7 +14,7 @@
             </v-layout>
           </v-flex>
           <v-flex d-flex md4>
-            <v-layout column wrap>
+            <v-layout column>
               <v-flex d-flex md1 class="block_title">
                 <h3 class="text-xs-center">{{$t('message.areas')}}</h3>
               </v-flex>
@@ -24,7 +24,7 @@
             </v-layout>
           </v-flex>
           <v-flex d-flex md4>
-            <v-layout column wrap>
+            <v-layout column>
               <v-flex d-flex md1 class="block_title">
                 <h3 class="text-xs-center">{{$t('message.current_fps')}}: {{current_fps}}</h3>
               </v-flex>

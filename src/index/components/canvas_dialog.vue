@@ -2,7 +2,13 @@
   <div>
     <v-dialog v-on:keydown.esc="hide()" v-on:keydown.enter="update_areas()" :value="visible" persistent min-height="500">
       <v-card>
-        <v-card-title class="headline">{{$t("message.edit_zones")}}</v-card-title>
+        <v-card-title class="headline">
+          <span>{{$t("message.edit_zones")}}</span>
+          <v-spacer></v-spacer>
+          <v-btn icon @click="hide()">
+            <v-icon>close</v-icon>
+          </v-btn>
+        </v-card-title>
         <v-card-text id="canvas_container" class="text-xs-center">
           <canvas style="position: absolute; z-index:200" id="points_canvas" class="canvas1"></canvas>
           <canvas style="position: relative; z-index:100" id="current_user_image_canvas" class="canvas2"></canvas>

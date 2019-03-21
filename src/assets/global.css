@@ -436,3 +436,25 @@ table.table thead tr {
   max-height: 270px;
 }
 
+.bottom-fixed-footer{
+  position:fixed;
+  height: 20px;
+  width:100%;
+  margin-top:-25px
+}
+
+.has-fixed-footer {
+  padding-bottom:25px !important;
+}
+
+.full-width {
+  width:100%;
+}
+
+.no-shadow-never {
+  box-shadow: none !important;
+}
+
+.res-select-button {
+  border-right:none !important;
+}

@@ -12,11 +12,11 @@
         <div class="title mt-4 main-title">{{$t("message.working_on_glial_impact")}}</div>
       </v-toolbar-items>
     </v-toolbar>
-    <v-content style="padding-bottom:20px;">
+    <v-content class="has-fixed-footer">
       <router-view></router-view>
     </v-content>
     <div>
-      <div class="caption text-center align-self-center relative_block" style="position:fixed; height: 20px;">
+      <div class="caption text-center bottom-fixed-footer">
         2018-2019 © Nokia IoT Laboratory, Moscow.   Powered by Nokia Glial™ and IMPACT™.   Version: {{frontend_version}}
       </div>
     </div>
