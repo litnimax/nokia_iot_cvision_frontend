@@ -51,7 +51,7 @@ Vue.use(Vuex, VueAxios, Axios, Vue_i18n);
 const store = new Vuex.Store({
   state: {
     locale: localStorage.getItem('locale') ? localStorage.getItem('locale') : 'ru',
-    openCV_url: "http://0.0.0.0:9001",
+    openCV_url: "http://192.168.1.45:9001",
   },
   mutations: {
     updateLocale(state, locale) {
